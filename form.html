@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sample webpage</title>
+<script language="javascript">
+function do_it()
+{
+name=document.forms["formdata"].namedata.value;
+email=document.forms["formdata"].emaildata.value;
+pwd=document.forms["formdata"].pwddata.value;
+
+if(pwd.length<6)
+{
+alert("password should be 6");
+}
+}
+</script>
+</head>
+<body>
+<form name="formdata">
+<label>name</label>
+<input type="text" name="namedata"> <br> <br>
+<label>email</label>
+<input type="email" name="emaildata"> <br> <br>
+<label>password</label>
+<input type="password" name="pwddata"> <br> <br>
+<button type="submit" onclick="do_it()"> submit </button>
+</form>
+</body>
+</html>
